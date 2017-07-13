@@ -1,0 +1,29 @@
+server:
+  port: 8083
+
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+
+multipart:
+  maxFileSize: 500MB
+  maxRequestSize: 500MB
+
+logging:
+  config: /beauty/config/logback-spring.xml
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+mybatis:
+  datasource:
+    url: jdbc:mysql://%s/beauty?characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: beauty!
+
+mysqlUrl: 127.0.0.1:3306

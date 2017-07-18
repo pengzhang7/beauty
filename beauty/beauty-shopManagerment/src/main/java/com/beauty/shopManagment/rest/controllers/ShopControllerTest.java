@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping(value = "/api/beauty")
 @Api(value = "测试rest接口")
-public class test {
+public class ShopControllerTest {
 }
